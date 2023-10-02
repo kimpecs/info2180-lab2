@@ -10,9 +10,9 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 2fr; /* Adjust column widths */
+    grid-template-columns: 2fr 1fr; /* Adjust column widths */
     grid-template-rows: auto;
-    grid-template-areas: "header header" "sidebar main" "footer footer";
+    grid-template-areas: "header header" "main sidebar" "footer footer";
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -49,7 +49,7 @@ main {
     grid-area: main;
 }
 
-.main-content {
+.blog-posts {
     display: flex;
     flex-direction: column;
 }
@@ -67,16 +67,6 @@ p {
     color: #718096;
 }
 
-.float-left {
-    float: left;
-    margin-right: 20px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 20px;
-}
-
 aside {
     grid-area: sidebar;
     background-color: #E2E8F0;
@@ -88,16 +78,16 @@ h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/* Position the blog posts on the left */
-.blog-posts {
-    margin-right: 20px; /* Add margin to separate from the sidebar */
+.social-media a,
+.archives a {
+    color: #4299E1;
 }
 
-/* Style the about, social media, and archives sections */
+/* Additional styles for the sidebar */
 .sidebar-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align items to the left */
+    align-items: flex-start;
 }
 
 /* Style the links in the sidebar */
