@@ -12,7 +12,7 @@ body {
     display: grid;
     grid-template-columns: 2fr 1fr; 
     grid-template-rows: auto;
-    grid-template-areas: "header header" "header in" "main sidebar" "footer footer" ;
+    grid-template-areas: "header header" "main sidebar" "footer footer" ;
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -54,6 +54,20 @@ main {
     flex-direction: column;
 }
 
+img {
+    width: 200px;
+    height: 200px;
+}
+
+
+.art-img-1 {
+    float: right;
+}
+
+.art-img-2 {
+    float: left;
+}
+
 article {
     margin-bottom: 20px;
 }
@@ -69,9 +83,13 @@ p {
 
 aside {
     grid-area: sidebar;
-    background-color: #E2E8F0;
+     background-color: #e2e8f0e4; 
     padding: 20px;
 }
+
+/* .about{
+    color: ; 
+} */
 
 h3 {
     color: #48BB78;
@@ -80,22 +98,21 @@ h3 {
 
 .social-media a,
 .archives a {
-    width: 20px;
     color: #4299E1;
 }
 
 /* Additional styles for the sidebar */
 .sidebar-content {
-    width: 20px;
-    /* display: ;*/
-   /* flex-direction: column;*/
-    /* align-items: flex-start;*/
+    color: #e2e8f094;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 /* Style the links in the sidebar */
 .social-media a,
 .archives a {
-    width: 20px;
     color: #4299E1;
 }
 
