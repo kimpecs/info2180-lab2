@@ -28,6 +28,7 @@ header {
 }
 
 .header-content {
+    font-weight: 500;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,6 +47,7 @@ h1 {
 }
 
 main {
+
     grid-area: main;
 }
 
@@ -87,9 +89,20 @@ aside {
     padding: 20px;
 }
 
-/* .about{
-    color: ; 
-} */
+/* Normal font weight (usually the same as "400") */
+.normal-text {
+    font-weight: normal;
+}
+
+/* Bold text (usually the same as "700") */
+.bold-text {
+    font-weight: bold;
+}
+
+/* Lighter text (e.g., "300" for a lighter font weight) */
+.light-text {
+    font-weight: 300;
+}
 
 h3 {
     color: #48BB78;
